@@ -1,0 +1,101 @@
+.navbarmenu {
+  background-color: #282828 !important;
+}
+
+.itemsmenu {
+  color: #fff !important;
+}
+
+body {
+  background-color: #282828;
+}
+
+.elemento-jugador {
+  max-width: 450px;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.elemento-jugador img {
+  transition: all 0.25s linear;
+}
+.elemento-jugador .profile-content {
+  position: relative;
+  padding: 15px;
+  background-color: #FFF;
+}
+.elemento-jugador .profile-name {
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: -70px;
+  color: #FFF;
+  font-size: 17px;
+}
+.elemento-jugador .profile-name p {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+.elemento-jugador .profile-description {
+  color: #777;
+  font-size: 12px;
+  padding: 10px;
+}
+.elemento-jugador .profile-overview {
+  padding: 15px 0px;
+}
+.elemento-jugador .profile-overview p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #777;
+}
+.elemento-jugador .profile-overview h4 {
+  color: #273751;
+  font-weight: bold;
+}
+.elemento-jugador .profile-content::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  left: 0px;
+  right: 0px;
+  background-color: #FFF;
+  z-index: 0;
+  transform: skewY(3deg);
+}
+.elemento-jugador:hover img {
+  transform: rotate(5deg) scale(1.1, 1.1);
+  filter: brightness(110%);
+}
+.elemento-jugador .about-link {
+  padding-left: 0px;
+}
+.elemento-jugador .about-link li {
+  display: inline-block;
+}
+.elemento-jugador .about-link li a i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #d6c6b2;
+  margin-right: 20px;
+  font-size: 22px;
+  color: #d6c6b2;
+  transition: all 0.3s;
+}
+.elemento-jugador .about-link li a i:hover {
+  color: #222222;
+  background: #d6c6b2;
+  border-color: #d6c6b2;
+}
+
+/*# sourceMappingURL=futbol.css.map */
