@@ -1,20 +1,29 @@
+$background-color: #fff;
+
+%mensaje {
+    left: 0px;
+    right: 0px;
+}
+
 .navbarmenu {
     background-color: #282828 !important;
 }
 
 .itemsmenu {
-    color: #fff !important;
+    color: $background-color !important;
 }
 
-body{
+body {
     background-color: #282828;
 }
-h1{
-    color: white;
+
+h1 {
+    color: $background-color;
 }
- .elemento-jugador {
+
+.elemento-jugador {
     max-width: 450px;
-    background-color: #FFF;
+    background-color: $background-color;
     border-radius: 5px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -29,16 +38,15 @@ h1{
     .profile-content {
         position: relative;
         padding: 15px;
-        background-color: #FFF;
+        background-color: $background-color;
     }
 
     .profile-name {
         font-weight: bold;
         position: absolute;
-        left: 0px;
-        right: 0px;
+        @extend %mensaje;
         top: -70px;
-        color: #FFF;
+        color: #000;
         font-size: 17px;
 
         p {
@@ -74,9 +82,8 @@ h1{
         position: absolute;
         height: 20px;
         top: -10px;
-        left: 0px;
-        right: 0px;
-        background-color: #FFF;
+        @extend %mensaje;
+        background-color: $background-color;
         z-index: 0;
         transform: skewY(3deg);
     }

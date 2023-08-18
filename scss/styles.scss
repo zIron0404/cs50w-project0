@@ -5,6 +5,20 @@
     font-family: 'Poppins', sans-serif;
   }
   
+  #navbarmenu {
+    background-color: #282828 !important;
+  }
+  
+  .itemsmenu {
+    color: #fff !important;
+  }
+  
+  body {
+    background: #282828;
+    color: #d6c6b2;
+    text-align: center;
+  }
+  
   .container {
     justify-content: space-between;
     align-items: center;
@@ -12,8 +26,12 @@
     padding: 20px;
   
     .box {
-      background: #fff;
-
+      background: #282828;
+      color: #fff;
+  
+      /*display: flex;
+      flex-direction: column;
+      justify-content: center;*/
       align-items: center;
       padding: 20px 30px;
       border-radius: 5px;
@@ -101,4 +119,3 @@
       width: 100%;
     }
   }
-  
